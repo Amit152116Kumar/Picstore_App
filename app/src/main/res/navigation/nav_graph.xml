@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.firebase_auth.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_gridFragment"
+            app:destination="@id/gridFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.firebase_auth.fragments.account.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_gridFragment"
+            app:destination="@id/gridFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotFragment"
+            app:destination="@id/forgotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gridFragment"
+        android:name="com.example.firebase_auth.fragments.GridFragment"
+        android:label="fragment_grid"
+        tools:layout="@layout/fragment_grid">
+        <action
+            android:id="@+id/action_gridFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/gridFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_gridFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+        <action
+            android:id="@+id/action_gridFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.firebase_auth.fragments.account.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_gridFragment"
+            app:destination="@id/gridFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="com.example.firebase_auth.fragments.account.ForgotFragment"
+        android:label="fragment_forgot"
+        tools:layout="@layout/fragment_forgot">
+        <action
+            android:id="@+id/action_forgotFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/forgotFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.firebase_auth.fragments.PostFragment"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post">
+        <action
+            android:id="@+id/action_postFragment_to_gridFragment"
+            app:destination="@id/gridFragment"
+            app:popUpTo="@id/postFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.example.firebase_auth.fragments.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+</navigation>

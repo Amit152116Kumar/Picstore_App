@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Picstore</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email*</string>
+    <string name="prompt_password">Password*</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="name">Name*</string>
+    <string name="username">Username*</string>
+    <string name="register">Register</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="upload">Upload</string>
+    <string name="home">Home</string>
+    <string name="favourite">Favourite</string>
+    <string name="profile">Profile</string>
+    <string name="post">Post</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.PostFragment">
+
+    <Button
+        android:id="@+id/upload_Button"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="16dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:elevation="10dp"
+        android:text="@string/upload"
+        android:textColor="?attr/colorOnPrimary"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconTint="?attr/colorOnPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/shape"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/post_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="16dp"
+        android:autofillHints=""
+        android:background="@drawable/shape"
+        android:hint="@string/post"
+        android:padding="10dp"
+        android:textCursorDrawable="@android:color/black" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/submit_Button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/post" />
+
+
+</LinearLayout>
